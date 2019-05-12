@@ -10,9 +10,14 @@ Everything you need to pass mobile 2.1 at make school.
 * Fast: Faster than even raw SQLite on common operations, while maintaining an extremely rich feature set.
 
 **Realm is better than Core Data because it's easier to install and use.**
+
 ### NSCoder
 
-### UserDefaults
+### UserDefaults / plist
+There are options that are perfect for small cases and two of them are using plists and handling data with UserDefaults. With these methods we can avoid the overhead of setting up more than we need and they’re also simpler to implement.
+
+#### plist
+A property list, or plist, is an XML file that contains key-value data. In iOS, a common plist is the Info.plist file. An information property list file is a structured text file that contains essential configuration information for a bundled executable
 
 ### Keychain
 

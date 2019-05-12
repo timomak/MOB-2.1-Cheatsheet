@@ -14,6 +14,8 @@
 		F3D9C8732287FBD800179A24 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F3D9C8722287FBD800179A24 /* Assets.xcassets */; };
 		F3D9C8762287FBD800179A24 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F3D9C8742287FBD800179A24 /* LaunchScreen.storyboard */; };
 		F3D9C8812287FBD800179A24 /* MOB_2_1_CheatSheetTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9C8802287FBD800179A24 /* MOB_2_1_CheatSheetTests.swift */; };
+		F3D9C88C2287FDA000179A24 /* PlistVC.swift in Sources */ = {isa = PBXBuildFile; fileRef = F3D9C88B2287FDA000179A24 /* PlistVC.swift */; };
+		F3D9C88E2288014A00179A24 /* Item.plist in Resources */ = {isa = PBXBuildFile; fileRef = F3D9C88D2288014A00179A24 /* Item.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,6 +40,8 @@
 		F3D9C87C2287FBD800179A24 /* MOB-2.1-CheatSheetTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = "MOB-2.1-CheatSheetTests.xctest"; sourceTree = BUILT_PRODUCTS_DIR; };
 		F3D9C8802287FBD800179A24 /* MOB_2_1_CheatSheetTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MOB_2_1_CheatSheetTests.swift; sourceTree = "<group>"; };
 		F3D9C8822287FBD800179A24 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F3D9C88B2287FDA000179A24 /* PlistVC.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PlistVC.swift; sourceTree = "<group>"; };
+		F3D9C88D2288014A00179A24 /* Item.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Item.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,10 +85,12 @@
 			children = (
 				F3D9C8682287FBD600179A24 /* AppDelegate.swift */,
 				F3D9C86A2287FBD600179A24 /* ViewController.swift */,
+				F3D9C88B2287FDA000179A24 /* PlistVC.swift */,
 				F3D9C86C2287FBD600179A24 /* Main.storyboard */,
 				F3D9C8722287FBD800179A24 /* Assets.xcassets */,
 				F3D9C8742287FBD800179A24 /* LaunchScreen.storyboard */,
 				F3D9C8772287FBD800179A24 /* Info.plist */,
+				F3D9C88D2288014A00179A24 /* Item.plist */,
 				F3D9C86F2287FBD600179A24 /* MOB_2_1_CheatSheet.xcdatamodeld */,
 			);
 			path = "MOB-2.1-CheatSheet";
@@ -183,6 +189,7 @@
 				F3D9C8762287FBD800179A24 /* LaunchScreen.storyboard in Resources */,
 				F3D9C8732287FBD800179A24 /* Assets.xcassets in Resources */,
 				F3D9C86E2287FBD600179A24 /* Main.storyboard in Resources */,
+				F3D9C88E2288014A00179A24 /* Item.plist in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -202,6 +209,7 @@
 			files = (
 				F3D9C8712287FBD600179A24 /* MOB_2_1_CheatSheet.xcdatamodeld in Sources */,
 				F3D9C86B2287FBD600179A24 /* ViewController.swift in Sources */,
+				F3D9C88C2287FDA000179A24 /* PlistVC.swift in Sources */,
 				F3D9C8692287FBD600179A24 /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
