@@ -9,7 +9,7 @@ Everything you need to pass mobile 2.1 at make school.
 * Modern: Supports relationships, generics, vectorization and Swift.
 * Fast: Faster than even raw SQLite on common operations, while maintaining an extremely rich feature set.
 
-***Realm is better than Core Data because it's easier to install and use.***
+**Realm is better than Core Data because it's easier to install and use.**
 ### NSCoder
 
 ### UserDefaults
