@@ -7,6 +7,7 @@
 //
 
 import UIKit
+import Realm
 
 class ViewController: UIViewController {
 
@@ -17,6 +18,7 @@ class ViewController: UIViewController {
         makeUDWork()
         makeKeychainWork()
         makeCoreDataWork()
+        makeRealmWork()
     }
     
     func makePlistWork() {
@@ -49,6 +51,14 @@ class ViewController: UIViewController {
         let coreData = CoreDataFunc()
         coreData.savePerson(name: "Josh", age: 20)
         coreData.readPerson()
+        coreData.deleteAll()
+    }
+    
+    func makeRealmWork() {
+        let realmFunc = RealmFunc()
+        realmFunc.write(name: "tom", age: 24)
+        realmFunc.read()
+        realmFunc.deleteAll()
     }
 
 

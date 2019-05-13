@@ -45,4 +45,25 @@ class CoreDataFunc {
             print("Failed")
         }
     }
+    
+    func deleteAll() {
+        let context = appDelegate.persistentContainer.viewContext
+        let request = NSFetchRequest<NSFetchRequestResult>(entityName: "Item")
+        do {
+            var result = try context.fetch(request) as! [NSManagedObject]
+            for item in result {
+                context.delete(item)
+            }
+            do {
+                try context.save()
+            }
+            catch {
+                print(error)
+            }
+        } catch {
+            
+            print("Failed")
+        }
+        
+    }
 }
