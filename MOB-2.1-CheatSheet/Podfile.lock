@@ -1,0 +1,26 @@
+PODS:
+  - KeychainSwift (15.0.0)
+  - Realm (3.14.2):
+    - Realm/Headers (= 3.14.2)
+  - Realm/Headers (3.14.2)
+  - RealmSwift (3.14.2):
+    - Realm (= 3.14.2)
+
+DEPENDENCIES:
+  - KeychainSwift (~> 15.0)
+  - RealmSwift
+
+SPEC REPOS:
+  https://github.com/cocoapods/specs.git:
+    - KeychainSwift
+    - Realm
+    - RealmSwift
+
+SPEC CHECKSUMS:
+  KeychainSwift: c6fc018d287804faf1ce3f258a1e51a7178c8382
+  Realm: 179c6706e3a49dbfe112e572fd3c03d3169bea35
+  RealmSwift: 1797f272fb51c555b764fada32e82159a2c65247
+
+PODFILE CHECKSUM: 955e2b899d2d87f4b11059a1441948c89fba2ab9
+
+COCOAPODS: 1.6.1

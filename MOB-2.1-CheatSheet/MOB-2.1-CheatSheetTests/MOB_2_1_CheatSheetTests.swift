@@ -13,6 +13,9 @@ class MOB_2_1_CheatSheetTests: XCTestCase {
 
     override func setUp() {
         // Put setup code here. This method is called before the invocation of each test method in the class.
+        var plist = PlistFunc()
+        
+        
     }
 
     override func tearDown() {

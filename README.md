@@ -18,15 +18,21 @@ Everything you need to pass mobile 2.1 at make school.
 
 * USE CASES:
  * Uses SQLite, not Filesystem
- * Can have a backup with a child context
+ * Can have a backup with a child context (Notes app example [save while typing])
+
 ![corestack](img/corestack.png)
 
 
 ### Realm
-* Mobile-first: First database built from the ground up to run directly inside phones, tablets and wearables.
 * Simple: Data exposed as objects and queryable by code. Most of our users pick it up intuitively, getting simple apps up & running in minutes.
 * Modern: Supports relationships, generics, vectorization and Swift.
 * Fast: Faster than even raw SQLite on common operations, while maintaining an extremely rich feature set.
+
+* Easy to set up
+* Less code
+* Objects
+* Queries / predicates
+* Sort
 
 **Realm is better than Core Data because it's easier to install and use.**
 

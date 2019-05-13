@@ -13,6 +13,42 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
+        makePlistWork()
+        makeUDWork()
+        makeKeychainWork()
+        makeCoreDataWork()
+    }
+    
+    func makePlistWork() {
+        let plist = Plist(name: "Item")
+        do {
+            // Write
+            try plist!.addValuesToPlistFile(dictionary: ["name":"Timo", "age":18])
+        }
+        catch {
+            print(error)
+        }
+        // Read
+        print(plist!.getValuesInPlistFile()!)
+    }
+    
+    func makeUDWork() {
+        let userD = UserDefaultsFunc()
+        userD.saveItemUD(item: "Hello", key: "first")
+        
+        print(userD.readStringUD(key: "first")) // Returns "Hello"
+    }
+    
+    func makeKeychainWork() {
+        let keychain = KeychainFunc()
+        keychain.writeToKeychain(save: "I got the keys", key: "key")
+        keychain.readFromKeychain(key: "key")
+    }
+    
+    func makeCoreDataWork() {
+        let coreData = CoreDataFunc()
+        coreData.savePerson(name: "Josh", age: 20)
+        coreData.readPerson()
     }
 
 
