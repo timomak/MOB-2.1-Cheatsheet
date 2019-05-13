@@ -2,7 +2,26 @@
 Everything you need to pass mobile 2.1 at make school.
 
 # Persistances
+
+### Filesystem
+* Can store simple data (Not really a class)
+* No objects just as Data()
+
+* USE CASE:
+ * Downloading a movie
+
 ### Core Data
+* Can save complex objects
+* Relationships - one to many relationship (Owner and Dog relationship). An owner can have multiple dogs.
+* Larger data
+* Stores models
+
+* USE CASES:
+ * Uses SQLite, not Filesystem
+ * Can have a backup with a child context
+![corestack](img/corestack.png)
+
+
 ### Realm
 * Mobile-first: First database built from the ground up to run directly inside phones, tablets and wearables.
 * Simple: Data exposed as objects and queryable by code. Most of our users pick it up intuitively, getting simple apps up & running in minutes.
@@ -11,15 +30,52 @@ Everything you need to pass mobile 2.1 at make school.
 
 **Realm is better than Core Data because it's easier to install and use.**
 
-### NSCoder
+
 
 ### UserDefaults / plist
 There are options that are perfect for small cases and two of them are using plists and handling data with UserDefaults. With these methods we can avoid the overhead of setting up more than we need and they’re also simpler to implement.
 
-#### plist
+#### Plist
+* Local
+* Key : Value Data - Basic Swift Classes will work. No custom objects.
+* XML Format
+* Stores crucial information
+* Easy to use.
+* Cannot modify Info.plist
+* Permission keys have to be written into the plist
+* Remember keys and entry points.
+* Opening configuration values (Bundle name, version, start screen, app info)
+* Small Data
+* Not encrypted
+* DO NOT STORE SECRETS unless you .gitignore
+* Pretty easy
+
 A property list, or plist, is an XML file that contains key-value data. In iOS, a common plist is the Info.plist file. An information property list file is a structured text file that contains essential configuration information for a bundled executable
 
+#### UserDefaults
+* Local
+* small amounts of data (usually)
+* Key : Value - Basic Swift Classes will work. No custom objects.
+* Unsafe
+* Very easy
+
+* USE CASE:
+ * Check if the app is being opened for the first time.
+ * User preferences
+ * User flow
+
 ### Keychain
+* Secure
+* Encrypted
+* Stored locally (but shared between devices in iCould)
+* Small amounts of data
+
+* USE CASE:
+ * Store user passwords
+ * Store sensitive data
+
+
+
 
 
 
